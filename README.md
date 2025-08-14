@@ -1,6 +1,6 @@
 # 字体预览器 (A Font Viewer)
 <p align="center">
-  <img src="/assets/IMG.png" width="128" alt="应用图标">
+  <img src="/assets/IMG.png" width="128" alt="应用图标" herf="https://github.com/SkyShadowHero/AFontViewer">
 </p>
 一款使用 PyQt5 构建的现代化桌面字体预览工具，特别优化了对彩色Emoji字体的支持。
 
