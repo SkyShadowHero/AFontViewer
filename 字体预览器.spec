@@ -9,7 +9,6 @@ import platform
 def merge_icons():
     # 只在 Windows 系统上执行此操作
     if platform.system() != "Windows":
-        # 在非 Windows 系统上，我们可以选择一个 PNG 作为备用图标
         # 或者直接返回 None
         if os.path.exists('assets/IMG.png'):
             return 'assets/IMG.png' # Linux/macOS 可以使用 png
@@ -19,14 +18,13 @@ def merge_icons():
     icon_paths = [
         'assets/IMG_16.ico',
         'assets/IMG_32.ico',
-        'assets.IMG_256.ico' # 确保文件名正确
+        'assets.IMG_256.ico'
     ]
     
     # 检查所有源图标是否存在
     for path in icon_paths:
         if not os.path.exists(path):
             print(f"警告：图标文件 {path} 不存在，跳过合并。")
-            # 如果缺少关键图标，可以选择一个存在的作为备用
             return 'assets/IMG_256.ico' if os.path.exists('assets/IMG_256.ico') else None
 
     # 定义合并后输出的图标文件名
