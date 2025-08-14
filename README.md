@@ -1,5 +1,7 @@
 # 字体预览器 (A Font Viewer)
-
+<p align="center">
+  <img src="/assets/IMG.png" width="128" alt="应用图标">
+</p>
 一款使用 PyQt5 构建的现代化桌面字体预览工具，特别优化了对彩色Emoji字体的支持。
 
 ![预览](/assets/view.png)
@@ -18,3 +20,9 @@
 1.  安装 PyQt5 (`pip install PyQt5`)。
 2.  运行主程序: `python main.py`
 3.  程序首次运行会自动创建 `fonts` 文件夹，可将字体放入其中。
+
+## 打包
+
+- 安装pyinstaller(`pip install pyinstaller`)
+- 配置 **AFontViewer.spec**
+- 运行pyinstaller打包(`pyinstaller AFontViewer.spec`)
